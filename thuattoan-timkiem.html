@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuật toán tìm kiếm</title>
+</head>
+<body>
+    <script>
+
+        function checkPhoneNumber(str) {
+            for (let i = 0; i < str.length; i++) {
+                let patt = /\b(0)[9|8|3]\d{8}\b$/;
+                if (patt.test(str[i])) {
+                    console.log('true');
+                } else {
+                    console.log("false")
+                }
+            }
+        }
+            let arr=['0987654321','0123456789','0381234567','0879546321'];
+        checkPhoneNumber(arr);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
